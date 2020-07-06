@@ -64,9 +64,7 @@ namespace Lab01a___Exception_Handling_and_Debugging
             }
             catch (Exception e)
             {
-                Console.WriteLine("Exception encountered.");
-                Console.WriteLine(e.Message);
-                Console.WriteLine(e.StackTrace);
+                throw e;
             }
         }
 
@@ -97,7 +95,14 @@ namespace Lab01a___Exception_Handling_and_Debugging
 
         static int GetProduct(int[] intArray, int sum)
         {
-            return -1;
+            Console.WriteLine("Please choose a number between 1 and {0}", intArray.Length);
+            int userEntry = Convert.ToInt32(Console.ReadLine());
+            if (userEntry < 1 || userEntry > intArray.Length)
+            {
+                throw new System.IndexOutOfRangeException($"Number needed to be between 1 and {intArray.Length}.");
+            }
+            int product = sum * userEntry;
+            return product;
         }
 
         static decimal GetQuotient(int product)
