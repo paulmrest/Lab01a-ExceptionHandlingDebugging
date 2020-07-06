@@ -39,7 +39,7 @@ namespace Lab01a___Exception_Handling_and_Debugging
                 {
                     if (i == intArray.Length - 1)
                     {
-                        Console.Write("{0}", intArray[i]);
+                        Console.Write("{0}\n", intArray[i]);
                     }
                     else
                     {
@@ -82,7 +82,17 @@ namespace Lab01a___Exception_Handling_and_Debugging
 
         static int GetSum(int[] intArray)
         {
-            return -1;
+            int minSum = 20;
+            int sum = 0;
+            foreach (int oneInt in intArray)
+            {
+                sum += oneInt;
+            }
+            if (sum < minSum)
+            {
+                throw new System.InvalidOperationException($"Value of {sum} is too low. Needs to be >= {minSum}.");
+            }
+            return sum;
         }
 
         static int GetProduct(int[] intArray, int sum)
