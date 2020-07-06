@@ -6,4 +6,8 @@
     <RootNamespace>Lab01a___Exception_Handling_and_Debugging</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="images\" />
+  </ItemGroup>
+
 </Project>
