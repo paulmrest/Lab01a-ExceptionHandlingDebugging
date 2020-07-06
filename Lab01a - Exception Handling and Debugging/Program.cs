@@ -22,6 +22,10 @@ namespace Lab01a___Exception_Handling_and_Debugging
             }
         }
 
+        //Our controller method. Will be calling all other methods from here.
+        //Input: none
+        //Output: print to console
+        //Exceptions: none
         static void StartSequence()
         {
             try
@@ -68,6 +72,10 @@ namespace Lab01a___Exception_Handling_and_Debugging
             }
         }
 
+        //Populate the integer array with user input
+        //Input: an integer array of Length > 0
+        //Output: an integer array populated with user input
+        //Exceptions: FormatException, OverflowExecption
         static int[] Populate(int[] intArray)
         {
             for (int i = 0; i < intArray.Length; i++)
@@ -78,6 +86,10 @@ namespace Lab01a___Exception_Handling_and_Debugging
             return intArray;
         }
 
+        //Calculates and returns a sum of all integers in an array
+        //Input: an integer array of Length > 0
+        //Output: an integer value representing the sum
+        //Exceptions: InvalidOperationException if sum < 20
         static int GetSum(int[] intArray)
         {
             int minSum = 20;
@@ -93,6 +105,11 @@ namespace Lab01a___Exception_Handling_and_Debugging
             return sum;
         }
 
+        //Asks the user for a value that is a valid index (+1) for the parameter array passed in, then multiples the value at that index
+        //by the sum parameter. Returns that product.
+        //Input: an integer array of Length > 0
+        //Output: an integer value represending the product of sum * value at user inputted index
+        //Exceptions: IndexOutOfRangeException if user chooses a value that doesn't correspodn to a valid index
         static int GetProduct(int[] intArray, int sum)
         {
             Console.WriteLine("Please choose a number between 1 and {0}", intArray.Length);
@@ -105,6 +122,10 @@ namespace Lab01a___Exception_Handling_and_Debugging
             return product;
         }
 
+        //Asks the user for number to divide the product parameter by, performs that division, and returns the result.
+        //Input: a integer value
+        //Output: a decmial value representing the product / user Input
+        //Exceptions: DivideByZeroException if the user entered value is 0
         static decimal GetQuotient(int product)
         {
             try
