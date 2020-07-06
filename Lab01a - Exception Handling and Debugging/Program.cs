@@ -72,7 +72,12 @@ namespace Lab01a___Exception_Handling_and_Debugging
 
         static int[] Populate(int[] intArray)
         {
-            return null;
+            for (int i = 0; i < intArray.Length; i++)
+            {
+                Console.WriteLine("Please enter number {0} or {1}", i + 1, intArray.Length);
+                intArray[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            return intArray;
         }
 
         static int GetSum(int[] intArray)
