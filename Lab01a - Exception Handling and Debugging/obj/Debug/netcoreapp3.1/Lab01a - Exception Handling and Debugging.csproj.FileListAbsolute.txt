@@ -1,0 +1,13 @@
+C:\Users\paulm\OneDrive\Documents\Developer\401-CF\Lab01a-ExceptionHandlingDebugging\Lab01a - Exception Handling and Debugging\bin\Debug\netcoreapp3.1\Lab01a - Exception Handling and Debugging.exe
+C:\Users\paulm\OneDrive\Documents\Developer\401-CF\Lab01a-ExceptionHandlingDebugging\Lab01a - Exception Handling and Debugging\bin\Debug\netcoreapp3.1\Lab01a - Exception Handling and Debugging.deps.json
+C:\Users\paulm\OneDrive\Documents\Developer\401-CF\Lab01a-ExceptionHandlingDebugging\Lab01a - Exception Handling and Debugging\bin\Debug\netcoreapp3.1\Lab01a - Exception Handling and Debugging.runtimeconfig.json
+C:\Users\paulm\OneDrive\Documents\Developer\401-CF\Lab01a-ExceptionHandlingDebugging\Lab01a - Exception Handling and Debugging\bin\Debug\netcoreapp3.1\Lab01a - Exception Handling and Debugging.runtimeconfig.dev.json
+C:\Users\paulm\OneDrive\Documents\Developer\401-CF\Lab01a-ExceptionHandlingDebugging\Lab01a - Exception Handling and Debugging\bin\Debug\netcoreapp3.1\Lab01a - Exception Handling and Debugging.dll
+C:\Users\paulm\OneDrive\Documents\Developer\401-CF\Lab01a-ExceptionHandlingDebugging\Lab01a - Exception Handling and Debugging\bin\Debug\netcoreapp3.1\Lab01a - Exception Handling and Debugging.pdb
+C:\Users\paulm\OneDrive\Documents\Developer\401-CF\Lab01a-ExceptionHandlingDebugging\Lab01a - Exception Handling and Debugging\obj\Debug\netcoreapp3.1\Lab01a - Exception Handling and Debugging.csprojAssemblyReference.cache
+C:\Users\paulm\OneDrive\Documents\Developer\401-CF\Lab01a-ExceptionHandlingDebugging\Lab01a - Exception Handling and Debugging\obj\Debug\netcoreapp3.1\Lab01a - Exception Handling and Debugging.AssemblyInfoInputs.cache
+C:\Users\paulm\OneDrive\Documents\Developer\401-CF\Lab01a-ExceptionHandlingDebugging\Lab01a - Exception Handling and Debugging\obj\Debug\netcoreapp3.1\Lab01a - Exception Handling and Debugging.AssemblyInfo.cs
+C:\Users\paulm\OneDrive\Documents\Developer\401-CF\Lab01a-ExceptionHandlingDebugging\Lab01a - Exception Handling and Debugging\obj\Debug\netcoreapp3.1\Lab01a - Exception Handling and Debugging.csproj.CoreCompileInputs.cache
+C:\Users\paulm\OneDrive\Documents\Developer\401-CF\Lab01a-ExceptionHandlingDebugging\Lab01a - Exception Handling and Debugging\obj\Debug\netcoreapp3.1\Lab01a - Exception Handling and Debugging.dll
+C:\Users\paulm\OneDrive\Documents\Developer\401-CF\Lab01a-ExceptionHandlingDebugging\Lab01a - Exception Handling and Debugging\obj\Debug\netcoreapp3.1\Lab01a - Exception Handling and Debugging.pdb
+C:\Users\paulm\OneDrive\Documents\Developer\401-CF\Lab01a-ExceptionHandlingDebugging\Lab01a - Exception Handling and Debugging\obj\Debug\netcoreapp3.1\Lab01a - Exception Handling and Debugging.genruntimeconfig.cache
