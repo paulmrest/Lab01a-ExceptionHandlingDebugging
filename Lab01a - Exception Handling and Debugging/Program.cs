@@ -47,8 +47,8 @@ namespace Lab01a___Exception_Handling_and_Debugging
                     }
                 }
                 Console.WriteLine("The sum of the array is: {0}", sum);
-                Console.WriteLine("{0} * {1} = {2}", sum, product, sum * product);
-                Console.WriteLine("{0} / {1} = {2}", sum * product, quotient, (sum * product) / quotient);
+                Console.WriteLine("{0} * {1} = {2}", sum, product / sum, product);
+                Console.WriteLine("{0} / {1} = {2}", product, product / quotient, quotient);
             }
             catch (FormatException e)
             {
@@ -101,13 +101,26 @@ namespace Lab01a___Exception_Handling_and_Debugging
             {
                 throw new System.IndexOutOfRangeException($"Number needed to be between 1 and {intArray.Length}.");
             }
-            int product = sum * userEntry;
+            int product = sum * intArray[userEntry - 1];
             return product;
         }
 
         static decimal GetQuotient(int product)
         {
-            return (decimal)-1.0;
+            try
+            {
+                Console.WriteLine("Please enter a number to divide your product {0} by:", product);
+                int divisor = Convert.ToInt32(Console.ReadLine());
+                decimal quot = decimal.Divide(product, divisor);
+                return quot;
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine("DivideByZeroException.");
+                Console.WriteLine(e.Message);
+                Console.WriteLine(e.StackTrace);
+                return 0;
+            }
         }
     }
 }
