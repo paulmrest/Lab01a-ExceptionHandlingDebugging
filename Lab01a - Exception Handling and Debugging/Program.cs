@@ -18,7 +18,7 @@ namespace Lab01a___Exception_Handling_and_Debugging
             }
             finally
             {
-                Console.WriteLine("Program completed successfully.");
+                Console.WriteLine("Program completed.");
             }
         }
 
@@ -100,6 +100,7 @@ namespace Lab01a___Exception_Handling_and_Debugging
             }
             if (sum < minSum)
             {
+                //within the bounds of "good pratice" C#/.NET Exception throwing, InvalidOPerationException seemed the most logical choice
                 throw new System.InvalidOperationException($"Value of {sum} is too low. Needs to be >= {minSum}.");
             }
             return sum;
