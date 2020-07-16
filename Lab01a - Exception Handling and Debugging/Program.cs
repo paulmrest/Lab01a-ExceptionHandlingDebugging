@@ -31,7 +31,8 @@ namespace Lab01a___Exception_Handling_and_Debugging
             try
             {
                 Console.WriteLine("Enter a number greater than zero.");
-                int userInput = Convert.ToInt32(Console.ReadLine());
+                string rawInput = Console.ReadLine();
+                int userInput = Convert.ToInt32(rawInput);
                 int[] intArray = new int[userInput];
                 Populate(intArray);
                 int sum = GetSum(intArray);
@@ -80,8 +81,9 @@ namespace Lab01a___Exception_Handling_and_Debugging
         {
             for (int i = 0; i < intArray.Length; i++)
             {
-                Console.WriteLine("Please enter number {0} or {1}", i + 1, intArray.Length);
-                intArray[i] = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Please enter number {0} of {1}", i + 1, intArray.Length);
+                string rawInput = Console.ReadLine();
+                intArray[i] = Convert.ToInt32(rawInput);
             }
             return intArray;
         }
@@ -114,7 +116,8 @@ namespace Lab01a___Exception_Handling_and_Debugging
         static int GetProduct(int[] intArray, int sum)
         {
             Console.WriteLine("Please choose a number between 1 and {0}", intArray.Length);
-            int userEntry = Convert.ToInt32(Console.ReadLine());
+            string rawInput = Console.ReadLine();
+            int userEntry = Convert.ToInt32(rawInput);
             if (userEntry < 1 || userEntry > intArray.Length)
             {
                 throw new System.IndexOutOfRangeException($"Number needed to be between 1 and {intArray.Length}.");
@@ -132,7 +135,8 @@ namespace Lab01a___Exception_Handling_and_Debugging
             try
             {
                 Console.WriteLine("Please enter a number to divide your product {0} by:", product);
-                int divisor = Convert.ToInt32(Console.ReadLine());
+                string rawInput = Console.ReadLine();
+                int divisor = Convert.ToInt32(rawInput);
                 decimal quot = decimal.Divide(product, divisor);
                 return quot;
             }
